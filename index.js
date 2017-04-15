@@ -38,7 +38,7 @@ module.exports.Server = class Server {
   start() {
     return new Promise((resolve, reject) => {
       this.app.listen(() => {
-        resolve('Listening', this.port)
+        resolve('Listening' + this.port)
       })
     })
   }
